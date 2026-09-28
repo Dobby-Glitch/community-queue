@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#100d19"><title>Community Queue</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell">
+  <header class="topbar"><a class="brand" href="/" aria-label="Community Queue home"><span class="brand-mark">CQ</span><span>COMMUNITY <b>QUEUE</b></span></a><span class="live"><i></i> LIVE QUEUE</span></header>
+  <section class="hero"><p class="eyebrow">COMMUNITY NIGHT</p><h1>Who's <span>up next?</span></h1><p class="subhead">Join the line and follow along while we play.</p></section>
+  <section class="join-card panel"><div><h2>Get in the queue</h2><p>Enter your Twitch username to take your place.</p></div><form id="join-form"><label class="username-input"><span>@</span><input id="username" name="username" maxlength="26" placeholder="yourusername" autocomplete="off" required aria-label="Twitch username"><button type="submit">Join queue <span>→</span></button></label></form></section>
+  <section class="now-card panel"><div class="section-label"><span class="pulse"></span> NOW PLAYING</div><div id="current-player" class="current-player">Queue is open</div><div id="current-time" class="current-time">Be the first to join tonight</div></section>
+  <section class="waiting panel"><div class="list-heading"><div><p class="eyebrow">THE LINEUP</p><h2>Up next</h2></div><span id="queue-count" class="count-pill">0 waiting</span></div><div id="waiting-list" class="waiting-list"></div></section>
+  <footer class="footer"><span>Made for good games & good company.</span><button id="secret" class="secret">DO NOT PRESS</button><a href="/mod">Mod</a></footer>
+</main><div id="toast-area" class="toast-area" aria-live="polite"></div><script src="/socket.io/socket.io.js"></script><script src="/app.js"></script></body></html>

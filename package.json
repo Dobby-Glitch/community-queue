@@ -1,0 +1,19 @@
+{
+  "name": "community-queue",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A real-time Twitch community queue powered by Express, Socket.IO, and SQLite.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}

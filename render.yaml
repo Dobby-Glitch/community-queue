@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: community-queue
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: community-queue-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MOD_PIN
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: DB_PATH
+        value: /var/data/queue.sqlite
